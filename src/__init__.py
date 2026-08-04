@@ -1,0 +1,1 @@
+"""BirdRecognitionSystem source package."""

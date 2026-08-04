@@ -1,0 +1,36 @@
+project:
+  name: BirdRecognitionSystem
+  seed: 42
+
+paths:
+  data_dir: data
+  raw_dir: data/raw
+  processed_dir: data/processed
+  metadata_dir: data/metadata
+  splits_dir: data/splits
+  background_noise_dir: data/background_noise
+  models_dir: models
+  reports_dir: reports
+  figures_dir: reports/figures
+
+audio:
+  sample_rate: 32000
+  clip_duration_seconds: 5
+  n_mels: 128
+  n_fft: 2048
+  hop_length: 512
+  fmin: 20
+  fmax: 14000
+
+training:
+  batch_size: 32
+  num_workers: 4
+  epochs: 30
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  val_split: 0.2
+
+model:
+  name: baseline_cnn
+  num_classes: 1
+  dropout: 0.3

@@ -23,3 +23,7 @@ Estructura base reproducible para un sistema de reconocimiento de aves en audio.
 
 La carpeta `data/` se reserva para datos locales descargados o generados.
 Los archivos pesados de entrenamiento y las figuras de salida se excluyen del control de versiones.
+
+## Descripción
+
+Una red neuronal entrenada para reconocer el canto de diferentes pájaros.

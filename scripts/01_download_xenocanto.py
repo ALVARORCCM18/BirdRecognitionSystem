@@ -56,7 +56,7 @@ def main() -> None:
     pilot_recordings = recordings[:PILOT_SIZE]
 
     downloader = Downloader(output_dir=str(OUTPUT_DIR))
-    downloader.save_metadata_only(pilot_recordings)
+    downloader.download_recordings(pilot_recordings)
 
     print(
         f"Metadatos de {len(pilot_recordings)} grabaciones "
